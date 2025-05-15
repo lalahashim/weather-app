@@ -1,0 +1,162 @@
+body{
+    background-image: url(public/background.jpg);
+    background-size: cover;
+    background-position: cover;
+    backdrop-filter: blur(50px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Libre Baskerville";
+}
+
+.dont-show{
+    display: none !important;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: url(public/background.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #333;
+    color: whitesmoke;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 40%;
+    height: 12%;
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: blur(30px);
+}
+#city-search{
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+    width: 90%;
+    height: 70%;
+}
+#city-search:hover, #city-search:focus{
+    outline: none;
+}
+
+
+.day{
+    background-image: url(public/day.jpg);
+}
+.night{
+    background-image: url(public/night.jpg);
+}
+
+
+#all-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 80%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #333;
+    color: whitesmoke;
+}
+
+#current-data{
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+}
+.main-data{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 25px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+h1{
+    margin: 0;
+}
+#current-location{
+    margin: 0;
+}
+#current-other{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+}
+
+
+#hourly-data{
+    border-radius: 10px;
+    padding: 15px 25px;
+    backdrop-filter: blur(5px);
+    background-color: rgb(0, 0, 0, 0.4);
+}
+#detailed-data{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 7px;
+}
+.hourly-detailed{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.hourly-detailed p{
+    font-size: 14px;
+    margin: 0;
+}
+
+
+#weekly-data{
+    margin-top: 20px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: left;
+    backdrop-filter: blur(5px);
+    background-color: rgb(0, 0, 0, 0.4);
+}
+#weekly-data li{
+    margin: 5px 0;
+}
+.body-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+}
+#high-low-temp{
+    display: flex;
+    flex-direction: row;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+h4{
+    margin: 0;
+}
+

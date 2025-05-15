@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="search">
+        <form>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+            <input type="search" id="city-search" name="city-search" placeholder="enter a city name" required>
+        </form>
+    </section>
+
+
+    <section id="all-data" class="dont-show">
+        <div id="current-data">
+            <div class="main-data">
+                <h1 id="current-temperature"></h1>
+                <div id="current-icon"></div>
+            </div>
+            <h2 id="current-location"></h2>
+            <div id="current-other">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sunrise" viewBox="0 0 16 16"><path d="M7.646 1.146a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1-.708.708L8.5 2.707V4.5a.5.5 0 0 1-1 0V2.707l-.646.647a.5.5 0 1 1-.708-.708zM2.343 4.343a.5.5 0 0 1 .707 0l1.414 1.414a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707m11.314 0a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0M8 7a3 3 0 0 1 2.599 4.5H5.4A3 3 0 0 1 8 7m3.71 4.5a4 4 0 1 0-7.418 0H.499a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10m13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/></svg>
+                <p id="todays-sunrise"></p>
+                <p> | </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sunset" viewBox="0 0 16 16"><path d="M7.646 4.854a.5.5 0 0 0 .708 0l1.5-1.5a.5.5 0 0 0-.708-.708l-.646.647V1.5a.5.5 0 0 0-1 0v1.793l-.646-.647a.5.5 0 1 0-.708.708zm-5.303-.51a.5.5 0 0 1 .707 0l1.414 1.413a.5.5 0 0 1-.707.707L2.343 5.05a.5.5 0 0 1 0-.707zm11.314 0a.5.5 0 0 1 0 .706l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zM8 7a3 3 0 0 1 2.599 4.5H5.4A3 3 0 0 1 8 7m3.71 4.5a4 4 0 1 0-7.418 0H.499a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1h-3.79zM0 10a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 0 10m13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/></svg>
+                <p id="todays-sunset"></p>
+            </div>
+        </div>
+
+        <div id="general-data">
+            <div id="hourly-data">
+                <h4>Hourly forecast</h4>
+                <hr>
+                <div id=detailed-data>
+                    <div class="first hourly-detailed">
+                        <p id="first-hour"></p>
+                        <div id="first-hour-icon"></div>
+                        <p id="first-hour-temp"></p>
+                    </div>
+
+                    <div class="second hourly-detailed">
+                        <p id="second-hour"></p>
+                        <div id="second-hour-icon"></div>
+                        <p id="second-hour-temp"></p>
+                    </div>
+
+                    <div class="third hourly-detailed">
+                        <p id="third-hour"></p>
+                        <div id="third-hour-icon"></div>
+                        <p id="third-hour-temp"></p>
+                    </div>
+
+                    <div class="fourth hourly-detailed">
+                        <p id="fourth-hour"></p>
+                        <div id="fourth-hour-icon"></div>
+                        <p id="fourth-hour-temp"></p>
+                    </div>
+
+                    <div class="fifth hourly-detailed">
+                        <p id="fifth-hour"></p>
+                        <div id="fifth-hour-icon"></div>
+                        <p id="fifth-hour-temp"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="weekly-data">
+                <div class="head">
+                    <h4>7-day forecast</h4>
+                    <hr>                    
+                </div>
+                <div class="body-data">
+                    <div id="week-days">
+                        <ul id="days-list"></ul>
+                    </div>
+                    <div id="weather-icons">
+                        <ul id="icons-list"></ul>
+                    </div>
+                    <div id="high-low-temp">
+                        <ul id="high-temp"></ul>
+                        <ul id="low-temp"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
