@@ -160,3 +160,46 @@ h4{
     margin: 0;
 }
 
+
+@media (max-width: 720px) {
+    #search{
+        width: 90%;
+        height: 30%;
+    }  
+    #search form{
+        width: 70%;
+        height: 17%;
+    } 
+
+    #all-data{
+        gap: 10px;
+        width: 90%;
+        height: 90%;
+    }
+    
+    #current-data{
+        margin-top: 20px;
+        background-color: rgb(0, 0, 0, 0.4);
+    }
+    .main-data{
+        font-size: 20px;
+        gap: 10px;
+        margin-bottom: 5px;
+    }
+    .top{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #general-data{
+        width: 90%;
+    }
+
+    .body-data{
+        gap: 10px;
+    }
+    ul{
+        padding: 7px;
+    }
+}
